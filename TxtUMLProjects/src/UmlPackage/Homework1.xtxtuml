@@ -1,0 +1,110 @@
+package UmlPackage;
+
+import javax.annotation.processing.Completion;
+
+import hu.elte.txtuml.api.model.Association;
+import hu.elte.txtuml.api.model.Composition;
+import hu.elte.txtuml.api.model.Model;
+
+class Country{
+	}
+
+class Goverment{
+	String Name;
+}
+
+class PoliticalParty{
+	String partyName;
+	int partyId;
+}
+
+class Politicians extends Citizens{
+	
+}
+
+class Citizens{
+	
+}
+
+
+
+class Parliament{
+	
+	String address;
+}
+
+class Elections{
+	
+}
+
+class LocalElections extends Elections{
+	
+}
+
+class NationalElection extends Elections{
+	
+}
+
+class LocalGoverment extends Goverment{
+}
+
+class NationalGoverment extends Goverment{
+
+}
+
+association livesIn {
+	* Citizens citizens;
+	1 Country country; 
+}
+ 
+association ruledBy{
+	1 Goverment goverment;
+	1 PoliticalParty politicalParty;
+}
+
+association rules{
+	1 Goverment govement;
+	1 Country country;
+}
+
+association govern{
+	1 PoliticalParty politicalParty;
+	1 NationalElection nationalElection; 
+}
+
+association cast{
+	1 Citizens citizens;
+	1 Elections elections;
+	}
+
+association elects {
+	1 LocalElections localelEctions;
+	1 LocalGoverment localGoverment;
+}
+
+association electedBy {
+	1 NationalGoverment nationalElection;
+	1 NationalGoverment nationalGoverment;
+}
+
+
+composition countryHasPerson {
+	container Country country;
+	* Citizens citizens;
+}
+
+composition GovermentHasPoliticalParty{
+	container Goverment goverment;
+	1 PoliticalParty politicalParty;
+}
+
+composition PoliticalPartyHasPoliticians{
+	container PoliticalParty politicalParty;
+	1..* Politicians politicians;
+}
+
+composition ElectionsHasPoliticalParty{
+	container Elections elections;
+	2..* PoliticalParty politicalParty;
+}
+

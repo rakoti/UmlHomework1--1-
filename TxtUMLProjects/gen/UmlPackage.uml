@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_KDbrgK0iEeahPL9ujhcjsA" name="UmlModels">
+    <packageImport xmi:id="_KEvTEK0iEeahPL9ujhcjsA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://TXTUML_STDLIB/stdlib.uml#_DE5UMHLCEeWVx4ZuxFlarQ"/>
+    </packageImport>
+    <packageImport xmi:id="_KGN5wK0iEeahPL9ujhcjsA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KUcjAK0iEeahPL9ujhcjsA" name="GovermentHasPoliticalParty" memberEnd="_KZL5Ea0iEeahPL9ujhcjsA _KWwQIa0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KVcBgK0iEeahPL9ujhcjsA" name="NationalGoverment">
+      <generalization xmi:id="_KVpc4K0iEeahPL9ujhcjsA" general="_KWwQIK0iEeahPL9ujhcjsA"/>
+      <ownedAttribute xmi:id="_KaL-oa0iEeahPL9ujhcjsA" name="nationalElection" type="_KVcBgK0iEeahPL9ujhcjsA" association="_KaL-oK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KaMlsK0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KaMlsa0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KaNMwK0iEeahPL9ujhcjsA" name="nationalGoverment" type="_KVcBgK0iEeahPL9ujhcjsA" association="_KaL-oK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KaNMwa0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KaNz0K0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KVfr4K0iEeahPL9ujhcjsA" name="NationalGoverment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KVxYsK0iEeahPL9ujhcjsA" name="Citizens">
+      <ownedAttribute xmi:id="_KX-YIK0iEeahPL9ujhcjsA" name="elections" type="_KZ_KUK0iEeahPL9ujhcjsA" association="_KX9KAK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KX-YIa0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KX-_MK0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KYfVgK0iEeahPL9ujhcjsA" name="country" type="_KWjb0K0iEeahPL9ujhcjsA" association="_KYeucK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KYfVga0iEeahPL9ujhcjsA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KYf8kK0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KY3wAK0iEeahPL9ujhcjsA" name="country" type="_KWjb0K0iEeahPL9ujhcjsA" association="_KY160K0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KY4XEK0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KY4-IK0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KVxYsa0iEeahPL9ujhcjsA" name="Citizens"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KWTkMK0iEeahPL9ujhcjsA" name="rules" memberEnd="_KWjb0a0iEeahPL9ujhcjsA _KWwQJK0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KWjb0K0iEeahPL9ujhcjsA" name="Country">
+      <ownedAttribute xmi:id="_KWjb0a0iEeahPL9ujhcjsA" name="govement" type="_KWwQIK0iEeahPL9ujhcjsA" association="_KWTkMK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWjb0q0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWjb060iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KYf8ka0iEeahPL9ujhcjsA" name="citizens" type="_KVxYsK0iEeahPL9ujhcjsA" aggregation="composite" association="_KYeucK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KYgjoK0iEeahPL9ujhcjsA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KYhKsK0iEeahPL9ujhcjsA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KY2h4K0iEeahPL9ujhcjsA" name="citizens" type="_KVxYsK0iEeahPL9ujhcjsA" association="_KY160K0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KY3I8K0iEeahPL9ujhcjsA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KY3I8a0iEeahPL9ujhcjsA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KWkC4K0iEeahPL9ujhcjsA" name="Country"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KWwQIK0iEeahPL9ujhcjsA" name="Goverment">
+      <ownedAttribute xmi:id="_KWwQIa0iEeahPL9ujhcjsA" name="politicalParty" type="_KZL5EK0iEeahPL9ujhcjsA" aggregation="composite" association="_KUcjAK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWwQIq0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWwQI60iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KWwQJK0iEeahPL9ujhcjsA" name="country" type="_KWjb0K0iEeahPL9ujhcjsA" association="_KWTkMK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWwQJa0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWwQJq0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KWxeQK0iEeahPL9ujhcjsA" name="Name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KaWWsK0iEeahPL9ujhcjsA" name="politicalParty" type="_KZL5EK0iEeahPL9ujhcjsA" association="_KaUhgK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KaWWsa0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KaW9wK0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KWysYK0iEeahPL9ujhcjsA" name="Goverment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KXMVAK0iEeahPL9ujhcjsA" name="ElectionsHasPoliticalParty" memberEnd="_KZL5FK0iEeahPL9ujhcjsA _KZ_KUa0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KXaXcK0iEeahPL9ujhcjsA" name="govern" memberEnd="_KZA58a0iEeahPL9ujhcjsA _KZL5F60iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KXny0K0iEeahPL9ujhcjsA" name="Parliament">
+      <ownedAttribute xmi:id="_KXny0a0iEeahPL9ujhcjsA" name="address">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KXoZ4K0iEeahPL9ujhcjsA" name="Parliament"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KX9KAK0iEeahPL9ujhcjsA" name="cast" memberEnd="_KZ_KVK0iEeahPL9ujhcjsA _KX-YIK0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KYTIQK0iEeahPL9ujhcjsA" name="LocalGoverment">
+      <generalization xmi:id="_KYU9cK0iEeahPL9ujhcjsA" general="_KWwQIK0iEeahPL9ujhcjsA"/>
+      <ownedAttribute xmi:id="_KZWRIa0iEeahPL9ujhcjsA" name="localelEctions" type="_KZc-0K0iEeahPL9ujhcjsA" association="_KZWRIK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZW4MK0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZXfQK0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KYTvUK0iEeahPL9ujhcjsA" name="LocalGoverment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KYeucK0iEeahPL9ujhcjsA" name="countryHasPerson" memberEnd="_KYfVgK0iEeahPL9ujhcjsA _KYf8ka0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KYnRUK0iEeahPL9ujhcjsA" name="Politicians">
+      <generalization xmi:id="_KYq7sK0iEeahPL9ujhcjsA" general="_KVxYsK0iEeahPL9ujhcjsA"/>
+      <ownedAttribute xmi:id="_KZtdgK0iEeahPL9ujhcjsA" name="politicalParty" type="_KZL5EK0iEeahPL9ujhcjsA" association="_KZs2cK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZtdga0iEeahPL9ujhcjsA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZuEkK0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KYn4YK0iEeahPL9ujhcjsA" name="Politicians"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KY160K0iEeahPL9ujhcjsA" name="livesIn" memberEnd="_KY2h4K0iEeahPL9ujhcjsA _KY3wAK0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KZA58K0iEeahPL9ujhcjsA" name="NationalElection">
+      <generalization xmi:id="_KZDWMK0iEeahPL9ujhcjsA" general="_KZ_KUK0iEeahPL9ujhcjsA"/>
+      <ownedAttribute xmi:id="_KZA58a0iEeahPL9ujhcjsA" name="politicalParty" type="_KZL5EK0iEeahPL9ujhcjsA" association="_KXaXcK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZA58q0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZA5860iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KZBhAK0iEeahPL9ujhcjsA" name="NationalElection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KZL5EK0iEeahPL9ujhcjsA" name="PoliticalParty">
+      <ownedAttribute xmi:id="_KZL5Ea0iEeahPL9ujhcjsA" name="goverment" type="_KWwQIK0iEeahPL9ujhcjsA" association="_KUcjAK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZL5Eq0iEeahPL9ujhcjsA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZL5E60iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZL5FK0iEeahPL9ujhcjsA" name="elections" type="_KZ_KUK0iEeahPL9ujhcjsA" association="_KXMVAK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZL5Fa0iEeahPL9ujhcjsA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZL5Fq0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZL5F60iEeahPL9ujhcjsA" name="nationalElection" type="_KZA58K0iEeahPL9ujhcjsA" association="_KXaXcK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZL5GK0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZL5Ga0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZMgIK0iEeahPL9ujhcjsA" name="partyId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZMgIa0iEeahPL9ujhcjsA" name="partyName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZ0LMK0iEeahPL9ujhcjsA" name="politicians" type="_KYnRUK0iEeahPL9ujhcjsA" aggregation="composite" association="_KZs2cK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZ0yQK0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZ0yQa0iEeahPL9ujhcjsA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KaVIkK0iEeahPL9ujhcjsA" name="goverment" type="_KWwQIK0iEeahPL9ujhcjsA" association="_KaUhgK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KaVvoK0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KaVvoa0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KZMgIq0iEeahPL9ujhcjsA" name="PoliticalParty"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KZWRIK0iEeahPL9ujhcjsA" name="elects" memberEnd="_KZWRIa0iEeahPL9ujhcjsA _KZc-0a0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KZc-0K0iEeahPL9ujhcjsA" name="LocalElections">
+      <generalization xmi:id="_KZfbEK0iEeahPL9ujhcjsA" general="_KZ_KUK0iEeahPL9ujhcjsA"/>
+      <ownedAttribute xmi:id="_KZc-0a0iEeahPL9ujhcjsA" name="localGoverment" type="_KYTIQK0iEeahPL9ujhcjsA" association="_KZWRIK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZc-0q0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZc-060iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KZdl4K0iEeahPL9ujhcjsA" name="LocalElections"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KZs2cK0iEeahPL9ujhcjsA" name="PoliticalPartyHasPoliticians" memberEnd="_KZtdgK0iEeahPL9ujhcjsA _KZ0LMK0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KZ_KUK0iEeahPL9ujhcjsA" name="Elections">
+      <ownedAttribute xmi:id="_KZ_KUa0iEeahPL9ujhcjsA" name="politicalParty" type="_KZL5EK0iEeahPL9ujhcjsA" aggregation="composite" association="_KXMVAK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZ_KUq0iEeahPL9ujhcjsA" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZ_KU60iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZ_KVK0iEeahPL9ujhcjsA" name="citizens" type="_KVxYsK0iEeahPL9ujhcjsA" association="_KX9KAK0iEeahPL9ujhcjsA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZ_KVa0iEeahPL9ujhcjsA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZ_KVq0iEeahPL9ujhcjsA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KZ_xYK0iEeahPL9ujhcjsA" name="Elections"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KaL-oK0iEeahPL9ujhcjsA" name="electedBy" memberEnd="_KaL-oa0iEeahPL9ujhcjsA _KaNMwK0iEeahPL9ujhcjsA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KaUhgK0iEeahPL9ujhcjsA" name="ruledBy" memberEnd="_KaVIkK0iEeahPL9ujhcjsA _KaWWsK0iEeahPL9ujhcjsA"/>
+    <profileApplication xmi:id="_KGRkIK0iEeahPL9ujhcjsA">
+      <eAnnotations xmi:id="_KGb8MK0iEeahPL9ujhcjsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_KVnnsK0iEeahPL9ujhcjsA" base_BehavioralFeature="_KVfr4K0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KVx_wK0iEeahPL9ujhcjsA" base_BehavioralFeature="_KVxYsa0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KWkp8K0iEeahPL9ujhcjsA" base_BehavioralFeature="_KWkC4K0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KWysYa0iEeahPL9ujhcjsA" base_BehavioralFeature="_KWysYK0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KXpA8K0iEeahPL9ujhcjsA" base_BehavioralFeature="_KXoZ4K0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KYTvUa0iEeahPL9ujhcjsA" base_BehavioralFeature="_KYTvUK0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KYofcK0iEeahPL9ujhcjsA" base_BehavioralFeature="_KYn4YK0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KZCIEK0iEeahPL9ujhcjsA" base_BehavioralFeature="_KZBhAK0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KZNuQK0iEeahPL9ujhcjsA" base_BehavioralFeature="_KZMgIq0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KZeM8K0iEeahPL9ujhcjsA" base_BehavioralFeature="_KZdl4K0iEeahPL9ujhcjsA"/>
+  <standard:Create xmi:id="_KaAYcK0iEeahPL9ujhcjsA" base_BehavioralFeature="_KZ_xYK0iEeahPL9ujhcjsA"/>
+</xmi:XMI>
